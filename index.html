@@ -18,41 +18,51 @@
 
 </head>
 <body>
-    <h1>PY-Numbers</h1>
+        <h1>Ibit's Burger Shack! Receipt</h1>
     <br>
     <form>
-        <input type="text" id="input1" placeholder="Enter a Number">
+        <input type="text" id="input1" placeholder="Enter Customer Name">
         <br>
-        <input type="text" id="input2" placeholder="Enter another Number">
+        <input type="text" id="input2" placeholder="Enter Requested Items">
+        <br>
+        <button type="button" py-click="confirm_info">Confirm Information</button>
         <br>
         <br>
         <label for="choose">Choose:</label>
         <br>
         <input type="checkbox" id="item1" value="120">
-        <label for="item1">Americano</label>
+        <label for="item1">Classic Cheeseburger</label>
+        <br>
+        <input type="checkbox" id="item2" value="150">
+        <label for="item2">Double Patty Cheeseburger</label>
+        <br>
+        <input type="checkbox" id="item3" value="180">
+        <label for="item3">Large Cheeseburger</label>
+        <br>
+        <input type="checkbox" id="item4" value="50" placeholder="Fries>
+        <label for="item4">Fries</label>
+        <br>
+        <input type="checkbox" id="item5" value="60" placeholder="Cheesy Fries">
+        <label for="item5">Cheesy Fries</label>
         <br>
         <br>
-        <label for="choose">Choose:</label>
+        <label for="choose">Chosen Extra Items / Requests:</label>
         <br>
         <input type="radio" id="regular" name="size" value="0">
         <label for="regular">Regular(+Php 0)</label>
         <br>
         <input type="radio" id="upsize" name="size" value="30">
-        <label for="upsize">Upsize(+Php 30)</label>
+        <label for="upsize">Extra Cheese(+Php 30)</label>
+        <br>
+        <input type="radio" id="extra_ketchup" name="size" value="30">
+        <label for="extra_ketchup">Extra Ketchup(+Php 30)</label>
+        <br>
+        <input type="radio" id="w/o_Veggies" name="size" value="30">
+        <label for="w/o_Veggies">Without Veggies(-Php 30)</label>
         <br>
         <br>
         <button type="button" py-click="create_order">Create Order</button>
         <br>
-        <br>
-        <select id="coffee">
-            <option value="0">Choose a coffee</option>
-            <option value="120">Americano</option>
-            <option value="150">Cappuccino</option>
-            <option value="180">Latte</option>
-        </select>
-        <button type="button" py-click="place_order">Place Order</button>
-        <br>
-
         <br>
         <button type="button" py-click="show_order">Show Order</button>
 
